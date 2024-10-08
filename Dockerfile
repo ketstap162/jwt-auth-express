@@ -7,6 +7,7 @@ RUN corepack enable pnpm && corepack install -g pnpm@latest
 WORKDIR /code
 
 COPY package*.json ./
+COPY pnpm-lock.yaml ./
 
 RUN pnpm install
 
